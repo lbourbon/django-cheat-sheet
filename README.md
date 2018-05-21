@@ -13,10 +13,12 @@ python manage.py migrate          //executa a migração
 
 ## Settings.py
 LANGUAGE_CODE = 'pt-br'
+
 TIME_ZONE = 'America/Sao_Paulo'
 
 ### arquivos estáticos (css, js)
 STATIC_URL = '/static/'
+
 STATICFILES_DIR = ['static']
 
 ## Template Tags
