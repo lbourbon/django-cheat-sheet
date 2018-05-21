@@ -21,7 +21,7 @@ STATICFILES_DIR = ['static']
 
 ## Template Tags
 ### base.html
-'''
+```html
 <!doctype html>
 <html lang="pt">
 <head>
@@ -39,11 +39,13 @@ STATICFILES_DIR = ['static']
 </div>
 </body>
 </html>
-'''
+```
 ### outros.html
+```html
 {% extends 'base.html'%}
 {% load bootstrap %}
 {% block title %} <Escolher Título>  {% endblock %}
 {% block main%}
   <Adicionar conteúdo do <body>>
 {% endblock %}
+```
