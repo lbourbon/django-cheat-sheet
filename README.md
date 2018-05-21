@@ -25,7 +25,7 @@ STATICFILES_DIR = ['static']
 ### base.html
 ```html
 <!doctype html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
