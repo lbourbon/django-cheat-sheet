@@ -2,7 +2,7 @@
 Cheat sheet for django
 
 
-## Smd
+## Cmd
 django-admin startproject <project name>
 
 python manage.py runserver
