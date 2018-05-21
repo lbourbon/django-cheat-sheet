@@ -21,6 +21,7 @@ STATICFILES_DIR = ['static']
 
 ## Template Tags
 ### base.html
+'''
 <!doctype html>
 <html lang="pt">
 <head>
@@ -38,7 +39,7 @@ STATICFILES_DIR = ['static']
 </div>
 </body>
 </html>
-
+'''
 ### outros.html
 {% extends 'base.html'%}
 {% load bootstrap %}
