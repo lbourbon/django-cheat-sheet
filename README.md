@@ -20,7 +20,7 @@ TIME_ZONE = 'America/Sao_Paulo'
 STATIC_URL = '/static/'
 
 STATICFILES_DIR = ['static']
-#### no html
+#### Obs: incluir no html:
 ```html
 {% load static %}  // topo
 <link rel="stylesheet" href="{% static 'style.css' %}">
