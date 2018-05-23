@@ -21,9 +21,11 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIR = ['static']
 #### no html
-{% load static %}
+```html
+{% load static %}  // topo
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <script src="{% static 'behavior.js' %}"></script>
+```
 
 ## Template Tags
 ### base.html
