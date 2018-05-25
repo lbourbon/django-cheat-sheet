@@ -13,7 +13,9 @@ python manage.py migrate          //executa a migração
 
 ## Shell
 python manage.py shell
+
 from <app>.models import <Model>
+
 
 all_objects = Model.objects.all()
 
