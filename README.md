@@ -11,6 +11,13 @@ python manage.py makemigrations   //cria um arquivo de migração
 
 python manage.py migrate          //executa a migração
 
+## Shell
+python manage.py shell
+from <app>.models import <Model>
+
+all_objects = Model.objects.all()
+my_object = Model.objects.get(pk=<id>)
+
 ## Settings.py
 LANGUAGE_CODE = 'pt-br'
 
