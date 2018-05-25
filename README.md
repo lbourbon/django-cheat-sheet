@@ -11,6 +11,8 @@ python manage.py makemigrations   //cria um arquivo de migração
 
 python manage.py migrate          //executa a migração
 
+python manage.py createsuperuser  //cria superuser p admin
+
 ## Shell
 python manage.py shell
 
