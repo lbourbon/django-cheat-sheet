@@ -30,7 +30,7 @@ Also, register the model in the app’s admin.py:
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User
-
+	
 admin.site.register(User, UserAdmin)
 </code>
 
