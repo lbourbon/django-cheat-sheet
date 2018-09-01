@@ -15,11 +15,12 @@ python manage.py createsuperuser  //cria superuser p admin
 
 ## Custom User Model
 If you’re starting a new project, it’s highly recommended to set up a custom user model, even if the default User model is sufficient for you. This model behaves identically to the default user model, but you’ll be able to customize it in the future if the need arises:
-
+<code>
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
     pass
+</code>
 
 Don’t forget to point AUTH_USER_MODEL to it. Do this before creating any migrations or running manage.py migrate for the first time.
 
