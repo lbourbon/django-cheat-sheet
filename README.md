@@ -15,6 +15,7 @@ python manage.py createsuperuser  //cria superuser p admin
 
 ## Custom User Model
 If you’re starting a new project, it’s highly recommended to set up a custom user model, even if the default User model is sufficient for you. This model behaves identically to the default user model, but you’ll be able to customize it in the future if the need arises:
+
 <code>
 from django.contrib.auth.models import AbstractUser
 
@@ -25,12 +26,13 @@ class User(AbstractUser):
 Don’t forget to point AUTH_USER_MODEL to it. Do this before creating any migrations or running manage.py migrate for the first time.
 
 Also, register the model in the app’s admin.py:
-
+<code>
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User
 
 admin.site.register(User, UserAdmin)
+</code>
 
 ## Shell
 python manage.py shell
@@ -43,14 +45,17 @@ all_objects = Model.objects.all()
 my_object = Model.objects.get(pk=<id>)
 
 ## Settings.py
+<code>
 LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
-
+</code>
 ### arquivos estáticos (css, js)
+<code>
 STATIC_URL = '/static/'
 
 STATICFILES_DIR = ['static']
+</code>
 #### Obs: incluir no html:
 ```html
 {% load static %}  // topo
