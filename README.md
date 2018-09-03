@@ -1,9 +1,16 @@
 # Django-cheat-sheet
 Cheat sheet for django
 
-
 ## Cmd
 django-admin startproject <project name>
+	
+(se clonando repositório: git clone github_url)
+
+python 3.6 -m venv venv
+
+. venv/bin/activate
+
+(se tiver requirements pip install -r requirements.dev.txt, lembrar de criar SECRET_KEY no .env)
 
 python manage.py runserver
 
