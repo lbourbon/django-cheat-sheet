@@ -12,6 +12,8 @@ python3 -m venv venv
 
 . venv/bin/activate
 
+pip install django OU
+
 (se tiver requirements pip install -r requirements.dev.txt, lembrar de criar SECRET_KEY no .env)
 
 python manage.py runserver
@@ -21,6 +23,12 @@ python manage.py makemigrations   //cria um arquivo de migração
 python manage.py migrate          //executa a migração
 
 python manage.py createsuperuser  //cria superuser p admin
+
+
+## Apps
+python manage.py startapp [app name]
+
+Include app name in INSTALLED_APPS in settings.py
 
 ## Custom User Model
 If you’re starting a new project, it’s highly recommended to set up a custom user model, even if the default User model is sufficient for you. This model behaves identically to the default user model, but you’ll be able to customize it in the future if the need arises:
