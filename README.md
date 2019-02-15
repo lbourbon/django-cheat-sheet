@@ -6,7 +6,7 @@ django-admin startproject <project name>
 	
 (se clonando repositório: git clone github_url)
 
-python 3.6 -m venv venv
+python3 -m venv venv
 
 . venv/bin/activate
 
