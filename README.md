@@ -2,9 +2,11 @@
 Cheat sheet for django
 
 ## Cmd
-django-admin startproject <project name>
+django-admin startproject [project name]
 	
 (se clonando repositório: git clone github_url)
+
+-> cd [nome do projeto]
 
 python3 -m venv venv
 
